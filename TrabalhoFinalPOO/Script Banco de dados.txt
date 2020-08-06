@@ -1,0 +1,17 @@
+DROP DATABASE escola;
+CREATE DATABASE escola;
+USE escola;
+CREATE TABLE `aluno` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) NOT NULL,
+  `n1` int(11) DEFAULT NULL,
+  `n2` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+);
+INSERT INTO `aluno`(nome, n1, n2) VALUES 
+('Elias Monteiro',100,40),
+('Virgílio Ernades',40,60),
+('Gilberto da Silva',60,30),
+('Abiana Ferreira',34,100),
+('Juliana Costa',60,60),
+('Emerson Nascimento',75,80);
